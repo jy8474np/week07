@@ -18,7 +18,7 @@
             <td>{{ name }}</td>
             <td>${{ unitPrice }}</td>
             <td><input type="number" id="quantity" v-model="quantity"></td>
-            <td id="total">${{ total | decimalPlaces(2) }}</td>
+            <td id="total"> ${{ total | decimalPlaces(2) }} </td>
         </tr>
     </table>
 </div>
@@ -34,13 +34,13 @@
         computed: {
             total: function () {
                 return this.quantity * this.unitPrice
+            }
             },
             filters: {
                 decimalPlaces: function(price, decimalPlaces) {
                     return price.toFixed(decimalPlaces)
                 }
             }
-        }
     })
 </script>
 

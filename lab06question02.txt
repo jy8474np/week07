@@ -1,0 +1,9 @@
+Lab 06, Question 02:
+
+The error means that a variable in the template is being used that doesn’t exist in the Vue data.
+
+It is caused by an undefined variable within the template.
+
+The issue can be solved by defining a total variable and/or check spelling if already defined.
+
+Citation: IntroToVue21.ppt, slide 26
